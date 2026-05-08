@@ -4,6 +4,7 @@ description: Poll RSS, JSON APIs, and GitHub with watermark dedup.
 version: 1.0.0
 author: Hermes Agent
 license: MIT
+platforms: [linux, macos]
 metadata:
   hermes:
     tags: [cron, polling, rss, github, http, automation, monitoring]
