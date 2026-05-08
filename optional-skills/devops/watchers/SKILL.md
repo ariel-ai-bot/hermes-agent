@@ -1,6 +1,6 @@
 ---
 name: watchers
-description: Poll external sources on an interval via cron — RSS feeds, HTTP JSON endpoints, GitHub activity — with watermark dedup so only new items get delivered.
+description: Poll RSS, JSON APIs, and GitHub with watermark dedup.
 version: 1.0.0
 author: hermes
 license: MIT
