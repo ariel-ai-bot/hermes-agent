@@ -1127,6 +1127,7 @@ tts:
   edge:
     voice: "en-US-AriaNeural"   # 322 voices, 74 languages
     speed: 1.0                  # Speed multiplier (converted to rate percentage, e.g. 1.5 → +50%)
+    pitch: "+0Hz"               # Pitch shift: "-100Hz" ~ "+100Hz" (default "+0Hz"), e.g. "+50Hz" for higher pitch
   elevenlabs:
     voice_id: "pNInz6obpgDQGcFmaJgB"
     model_id: "eleven_multilingual_v2"
@@ -1160,6 +1161,8 @@ tts:
 This controls both the `text_to_speech` tool and spoken replies in voice mode (`/voice tts` in the CLI or messaging gateway).
 
 **Speed fallback hierarchy:** provider-specific speed (e.g. `tts.edge.speed`) → global `tts.speed` → `1.0` default. Set the global `tts.speed` to apply a uniform speed across all providers, or override per-provider for fine-grained control.
+
+**Pitch format:** Use `+NNHz` to raise pitch or `-NNHz` to lower it (range: `-100Hz` to `+100Hz`). The default is `+0Hz` (no shift). For a cute, higher-pitched voice (e.g. loli-style), try `+50Hz`.
 
 ## Display Settings
 
